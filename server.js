@@ -23,7 +23,7 @@ app.post("/:id", (req, res) => {
 //     return res.status(404).send('no no baby')
 // })
 app.put('/update/:id', (req, res) => {
-        serverController.updateReportActivity(req.params.id)
+        serverController.updateReportActivity(req.body.reportId)
         return res.status(201).json({ "isError": false })
 
 
